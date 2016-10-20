@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<ul class="nav nav-pills" role="tablist">
+      <li role="presentation"> @Html.ActionLink("添加", "Index", "FileUpload")</li>
+	   <li role="presentation"  class="active "> @Html.ActionLink("修改", "Edit", "FileUpload")</li>
+	 
+</ul>
+
+<!-- blueimp File Upload & Gallery styles -->
+@Styles.Render("~/Content/FileUpload")
+<script>
+    var $form = null;
+    $(function () {
+
+        $form = $('#fileupload').fileupload({
+            dataType: 'json'
+        });
+
+    });
+    $('#fileupload').addClass('fileupload-processing');
+ 
+
+
+    $.ajax({
+        type: 'GET',
+        contentType: "application/json; charset=utf-8",
+        url: '/FileUpload/GetFileList',
+        success: function (data) {
+
+
+            $('#fileupload').fileupload().fileupload('option', 'done').call($('#fileupload'), $.Event('done'), { result: { files: data.files } })
+            $('#fileupload').removeClass('fileupload-processing');
+        }
+
+    }
+
+    );
+</script>
+
+@Html.Partial("_Files")
+
+
+@Scripts.Render("~/bundles/FileUpload")

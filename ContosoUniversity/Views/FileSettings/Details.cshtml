@@ -1,0 +1,251 @@
+﻿@model ContosoUniversity.Models.FileSetting
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FileSetting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IsImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Path)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Path)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgSmallPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgSmallPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgBigPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgBigPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Format)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Format)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgPreviewWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgPreviewWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgPreviewHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgPreviewHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgPreviewRatio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgPreviewRatio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.X1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.X1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Y1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Y1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.X2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.X2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Y2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Y2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.W)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.W)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.H)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.H)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgY1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgY1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgX2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgY2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgY2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgCropWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgCropWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgCropHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgCropHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DownloadCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DownloadCount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewCount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewCount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,145 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- start header -->
+		 <header>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="~/img/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("首页", "Index" ,"Home")</li>
+                       <li >@Html.ActionLink("课程", "Index", "Course")</li>
+                            <li  class="active">@Html.ActionLink("剪影", "Gallery", "Gallery")</li>
+                            <li>@Html.ActionLink("关于我们", "About", "Home")</li>
+                            <li>@Html.ActionLink("上传", "Index", "Upload")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+	</header><!-- end header -->
+	<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">Gallery</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12"> 
+				<div class="clearfix">
+				</div>
+				<div class="row no-gutter">
+					<section id="projects">
+					<div id="thumbs">
+						<!-- Item Project and Filter Name -->
+						<div class="item-thumbs col-lg-3 col-md-4 col-sm-4 work design" data-id="id-0" data-type="web"> 						
+					     <a class="work-box fancybox" data-fancybox-group="gallery" target="_blank" title="Gallery name" href="~/img/works/1.jpg">						
+						   <div class="overlay">
+							  <div class="overlay-caption">
+								<p><span class="fa fa-search"></span></p>
+							  </div>
+							</div>							
+						</a> 
+						<img src="~/img/works/1.jpg" alt="">													 
+						</div>
+						<!-- End Item Project -->	
+						<!-- Item Project and Filter Name -->
+						<div class="item-thumbs col-lg-3 col-md-4 col-sm-4 work design" data-id="id-1" data-type="icon"> 
+						<a class="work-box fancybox" data-fancybox-group="gallery" title="Gallery name" href="~/img/works/2.jpg">
+						 <div class="overlay">
+							  <div class="overlay-caption">
+								<p><span class="fa fa-search"></span></p>
+							  </div>
+							</div>
+						</a> 
+						<img src="~/img/works/2.jpg" alt="">
+						</div>
+						<!-- End Item Project -->
+						
+						<!-- Item Project and Filter Name -->
+						<div class="item-thumbs col-lg-3 col-md-4 col-sm-4 work photography" data-id="id-2" data-type="graphic"> 
+						<a class="work-box fancybox" data-fancybox-group="gallery" title="Gallery name" href="~/img/works/3.jpg">
+						 <div class="overlay">
+							  <div class="overlay-caption">
+								<p><span class="fa fa-search"></span></p>
+							  </div>
+							</div>
+						</a> 
+						<img src="~/img/works/3.jpg" alt="">
+						</div>
+						<!-- End Item Project -->
+						
+						<!-- Item Project and Filter Name -->
+						<div class="item-thumbs col-lg-3 col-md-4 col-sm-4 work design" data-id="id-0" data-type="web"> 
+						<a class="work-box fancybox" data-fancybox-group="gallery" title="Gallery name" href="~/img/works/4.jpg">
+						 <div class="overlay">
+							  <div class="overlay-caption">
+								<p><span class="fa fa-search"></span></p>
+							  </div>
+							</div>
+						</a> 
+						<img src="~/img/works/4.jpg" alt="">
+						</div>
+						<!-- End Item Project -->
+						
+						<!-- Item Project and Filter Name -->
+						<div class="item-thumbs col-lg-3 col-md-4 col-sm-4 work photography" data-id="id-4" data-type="web"> 
+						<a class="work-box fancybox" data-fancybox-group="gallery" title="Gallery name" href="~/img/works/5.jpg">
+						 <div class="overlay">
+							  <div class="overlay-caption">
+								<p><span class="fa fa-search"></span></p>
+							  </div>
+							</div>
+						</a> 
+						<img src="~/img/works/5.jpg" alt="">
+						</div>
+						<!-- End Item Project -->
+						
+						<!-- Item Project and Filter Name -->
+						<div class="item-thumbs col-lg-3 col-md-4 col-sm-4 work photography" data-id="id-5" data-type="icon"> 
+						<a class="work-box fancybox" data-fancybox-group="gallery" title="Gallery name" href="~/img/works/6.jpg">
+						 <div class="overlay">
+							  <div class="overlay-caption">
+								<p><span class="fa fa-search"></span></p>
+							  </div>
+							</div>
+						</a> 
+						<img src="~/img/works/6.jpg" alt="">
+						</div>
+						<!-- End Item Project -->
+						
+						<div class="item-thumbs col-lg-3 col-md-4 col-sm-4 work design" data-id="id-0" data-type="web"> 
+						<a class="work-box fancybox" data-fancybox-group="gallery" title="Gallery name" href="~/img/works/7.jpg">
+						 <div class="overlay">
+							  <div class="overlay-caption">
+								<p><span class="fa fa-search"></span></p>
+							  </div>
+							</div>
+						</a> 
+						<img src="~/img/works/7.jpg" alt="">
+						</div>
+						<!-- End Item Project -->
+				
+					
+                        </div>
+                        </section>
+			</div>
+        </div>
+            </div>
+	</div>
+	</section>
+

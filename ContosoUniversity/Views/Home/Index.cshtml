@@ -1,0 +1,235 @@
+﻿@{
+    ViewBag.Title = "首页";
+}
+   
+  <!-- start header -->
+        <header>
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="~/img/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse ">
+                        <ul class="nav navbar-nav">
+                            <li class="active">@Html.ActionLink("首页", "Index" ,"Home")</li>
+                            <li >@Html.ActionLink("课程", "Index", "Course")</li>
+                            <li>@Html.ActionLink("剪影", "Gallery", "Gallery")</li>
+                            <li>@Html.ActionLink("关于我们", "About", "Home")</li>
+                  <li>@Html.ActionLink("上传", "Index", "FileUpload")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->     
+<section id="featured">
+        <!-- Slider -->
+        <div class="carousel slide" data-interval="4000"  data-ride="carousel" id="carousel-673613">
+            <ol class="carousel-indicators">
+                <li data-slide-to="0" data-target="#carousel-673613">
+                </li>
+                <li data-slide-to="1" data-target="#carousel-673613" class="active">
+                </li>
+                <li data-slide-to="2" data-target="#carousel-673613">
+                </li>
+                <li data-slide-to="3" data-target="#carousel-673613">
+                </li>
+                <li data-slide-to="4" data-target="#carousel-673613">
+                </li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="/img/slides/5.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <div class="item_introtext">
+                            <strong>创造万物</strong>
+                            <p>做智能时代的掌控者</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="/img/slides/2.jpg" alt="" />
+                    <div class="flex-caption">
+                        <div class="item_introtext">
+                            <strong>起来</strong>
+                            <p>不愿做手机奴的人们</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="/img/slides/6.jpg" alt="" />
+                    <div class="flex-caption">
+                        <div class="item_introtext">
+                            <strong>来吧</strong>
+                            <p>我们等你</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/img/slides/7.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <div class="item_introtext">
+                            <strong>创造万物</strong>
+                            <p>做智能时代的掌控者</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-673613" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#carousel-673613" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+
+        <!-- end slider -->
+</section>
+<section class="hero-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="aligncenter">
+                    <h1 class="aligncenter">
+                        Icodingplay
+                    </h1><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus, vero mollitia velit ad consectetur. Alias, laborum excepturi nihil autem nemo numquam, ipsa architecto non, magni consequuntur quam.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="skill-home">
+                <div class="skill-home-solid clearfix">
+                    <div class="col-md-3 text-center">
+                        <span class="icons">
+                            <img src="~/img/stem-1.png">
+                        </span> <div class="box-area">
+                            <h3>Science</h3> <p>科学：这是什么，这是为什么？</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <span class="icons"><img src="img/stem-2.png"></span> <div class="box-area">
+                            <h3>Technology</h3> <p>技术：这是怎么做出来的。我要做</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <span class="icons"><img src="img/stem-3.png"></span> <div class="box-area">
+                            <h3>Engineering</h3> <p>工程：挽起袖子开始干吧</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <span class="icons"><img src="img/stem-4.png"></span> <div class="box-area">
+                            <h3>Mathematics</h3> <p>数学：这样做才对，这样做才准确</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<div class="testimonial-area">
+    <div class="testimonial-solid">
+        <div class="container">
+            <div class="testi-icon-area">
+                <div class="quote">
+                    <i class="fa fa-microphone"></i>
+                </div>
+            </div>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="">
+                        <a href="#"></a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class="">
+                        <a href="#"></a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class="active">
+                        <a href="#"></a>
+                    </li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3" class="">
+                        <a href="#"></a>
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item">
+                        <p> 孩子在快乐的时候，他学习任何东西都比较容易。<p>
+                            <b>——斯宾塞(英)</b>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p>如果学习只在模仿，那么我们就不会有科学，就不会有技术。　<p>
+                            <b>——高尔基(俄)</b>
+                        </p>
+                    </div>
+                    <div class="item active">
+                        <p>让学生体验到一种自己在亲身参与掌握知识的情感，乃是唤起少年特有的对知识的兴趣的重要条件。当一个人不仅在认识世界，而且在认识自我的时候，就能形成兴趣。没有这种自我肯定的体验，就不可能有对知识的真正的兴趣。” <p>
+                            <b>——苏霍姆林斯基(苏)</b>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p> 教学的艺术不在于传授本领，而在于激励、唤醒和鼓舞。<p>
+                            <b>——第斯多惠(德)</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="courses">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="aligncenter"><h2 class="aligncenter">课程体系<span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus, vero mollitia velit ad consectetur. Alias, laborum excepturi nihil autem nemo numquam, ipsa architecto non, magni consequuntur quam.</h2></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="textbox clour1">
+                    <h3>Heading Course</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="textbox clour2">
+                    <h3>Heading Course</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="textbox clour3">
+                    <h3>Heading Course</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="textbox clour4">
+                    <h3>Heading Course</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="textbox clour5">
+                    <h3>Heading Course</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="textbox clour6">
+                    <h3>Heading Course</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
