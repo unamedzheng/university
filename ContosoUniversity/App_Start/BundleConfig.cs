@@ -23,6 +23,7 @@ namespace ContosoUniversity
                       "~/Scripts/bootstrap.js",
                        "~/Scripts/bootstrap.js",
                         "~/Scripts/jquery.flexslider.js",
+                         "~/Scripts/menuActive.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -62,10 +63,10 @@ namespace ContosoUniversity
                         //!-- The File Upload user interface plugin -->
                         "~/Scripts/jQuery.FileUpload/jquery.fileupload-ui.js"));
 
-
-            // Set EnableOptimizations to false for debugging. For more information,
-            // visit http://go.microsoft.com/fwlink/?LinkId=301862
-            BundleTable.EnableOptimizations = true;
+           
+           // Set EnableOptimizations to false for debugging. For more information,
+           // visit http://go.microsoft.com/fwlink/?LinkId=301862
+           BundleTable.EnableOptimizations = true;
         }
     }
 }

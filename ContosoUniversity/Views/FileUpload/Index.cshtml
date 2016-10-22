@@ -7,7 +7,7 @@
 <h2>Index</h2>
 <ul class="nav nav-pills" role="tablist">
       <li role="presentation" class="active"> @Html.ActionLink("添加", "Index", "FileUpload")</li>
-	   <li role="presentation "> @Html.ActionLink("修改", "Edit", "FileUpload")</li>
+	   <li role="presentation"> @Html.ActionLink("修改", "Edit", "FileUpload")</li>
 	 
 </ul>
 <!-- blueimp File Upload & Gallery styles -->
@@ -26,7 +26,9 @@
             });
         });
     </script>*@
-
+<script>
+    $(active(1));
+</script>
 <script>
     var $form = null;
     $(function () {
