@@ -3,11 +3,12 @@
 @{
     ViewBag.Title = "Courses";
 }
+
 <section id="inner-headline">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="pageTitle">About Us</h2>
+                <h2 class="pageTitle">课程体系</h2>
             </div>
         </div>
     </div>
@@ -15,107 +16,56 @@
 <section id="content">
     <div class="container">
         <div class="row">
-
-            <p>
-                @Html.ActionLink("Create New", "Create")
-            </p>
-
-            @using (Html.BeginForm())
-            {
-                <p>
-                    Select Department: @Html.DropDownList("SelectedDepartment", "All")
-                    <input type="submit" value="Filter" />
-                </p>
-            }
-
-            <table class="table">
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.CourseID)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Title)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Credits)
-                    </th>
-                    <th>
-                        Department
-                    </th>
-                    <th></th>
-                </tr>
-
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.CourseID)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Title)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Credits)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Department.Name)
-                        </td>
-                        <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.CourseID }) |
-                            @Html.ActionLink("Details", "Details", new { id = item.CourseID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.CourseID })
-                        </td>
-                    </tr>
-                }
-
-            </table>
-            </div>
-        <div class="row">
             <div class="col-lg-12">
-                <div class="aligncenter"><h2 class="aligncenter">课程体系<span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus, vero mollitia velit ad consectetur. Alias, laborum excepturi nihil autem nemo numquam, ipsa architecto non, magni consequuntur quam.</h2></div>
+                <div class="aligncenter"><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;">
+                    </span>icoding Academy【编程学园】团队从2014年开始进行STEM教育本土化的推广与实践，结合国际STEM发展及本土情况设计出一套以T（技术）为驱动，将校本课程与STEM教育结合的教学体系。该体系分为L(Learning)、T（Training）、M（Mentoring）三个阶段覆盖从小学、初中、高中整个学习阶段。
+                 
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="textbox clour1">
-                    <h3>Heading Course</h3>
+                    <h3>L(Learning)</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="textbox clour2">
-                    <h3>Heading Course</h3>
+                    <h3>T（Training）</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="textbox clour3">
-                    <h3>Heading Course</h3>
+                    <h3>M（Mentoring）</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="textbox clour4">
-                    <h3>Heading Course</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+
+            <div class="row">
+                <div class="col-md-4 md-margin-bottom-40  bounceInRight animated">
+                    <img class="img-responsive" src="~/img/service1.jpg" />
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
+                </div>
+                <div class="col-md-4   bounceInUp animated">
+                    <img class="img-responsive" src="~/img/service2.jpg" />
+                    <h3>Mobile Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
+                </div>
+                <div class="col-md-4 md-margin-bottom-40   bounceInLeft animated">
+                    <img class="img-responsive" src="~/img/service3.jpg" />
+                    <h3>Responsive Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus temporibus perferendis nesciunt quam repellendus nulla nemo ipsum odit corrupti consequuntur possimus</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="textbox clour5">
-                    <h3>Heading Course</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="textbox clour6">
-                    <h3>Heading Course</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vest sit amet, consec ibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
-                </div>
-            </div>
+
+
         </div>
-        </div>
+
+
     </section>
             <script>
                 $(active(1));

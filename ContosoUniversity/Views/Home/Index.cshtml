@@ -21,7 +21,7 @@
             <div class="carousel-inner">
                 <div class="item">
                     <img src="/img/slides/5.jpg" alt="" />
-                    <div class="carousel-caption">
+                    <div class="carousel-caption ">
                         <div class="item_introtext">
                             <strong>创造万物</strong>
                             <p>做智能时代的掌控者</p>
@@ -78,30 +78,31 @@
 </section>
 <section id="content">
     <div class="container">
+     
         <div class="row">
             <div class="skill-home">
                 <div class="skill-home-solid clearfix">
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-3 text-center ">
                         <span class="icons">
-                            <img src="~/img/stem-1.png">
-                        </span> <div class="box-area">
-                            <h3>Science</h3> <p>科学：这是什么，这是为什么？</p>
+                            <img class="wow rollIn " src="~/img/stem-1.png">
+                        </span> <div class="box-area wow swing" data-wow-iteration="2" >
+                        <h3>Science</h3> <p>科学：这是什么，这是为什么？</p>
                         </div>
                     </div>
                     <div class="col-md-3 text-center">
-                        <span class="icons"><img src="img/stem-2.png"></span> <div class="box-area">
-                            <h3>Technology</h3> <p>技术：这是怎么做出来的。我要做</p>
-                        </div>
+                        <span class="icons"><img class="wow rollIn "  src="~/img/stem-2.png"></span> <div class="box-area wow swing" data-wow-iteration="2">
+    <h3>Technology</h3> <p>技术：这是怎么做出来的。我要做</p>
+</div>
                     </div>
                     <div class="col-md-3 text-center">
-                        <span class="icons"><img src="img/stem-3.png"></span> <div class="box-area">
-                            <h3>Engineering</h3> <p>工程：挽起袖子开始干吧</p>
-                        </div>
+                        <span class="icons"><img class="wow bounceInRight " src="~/img/stem-3.png"></span> <div class="box-area wow swing" data-wow-iteration="2">
+    <h3>Engineering</h3> <p>工程：挽起袖子开始干吧</p>
+</div>
                     </div>
                     <div class="col-md-3 text-center">
-                        <span class="icons"><img src="img/stem-4.png"></span> <div class="box-area">
-                            <h3>Mathematics</h3> <p>数学：这样做才对，这样做才准确</p>
-                        </div>
+                        <span class="icons"><img class="wow bounceInRight "  src="~/img/stem-4.png"></span> <div class="box-area wow swing" data-wow-iteration="2">
+    <h3>Mathematics</h3> <p>数学：这样做才对，这样做才准确</p>
+</div>
                     </div>
                 </div>
             </div>
@@ -209,3 +210,8 @@
         </div>
     </div>
 </section>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+	new WOW().init();
+};
+</script>
