@@ -32,6 +32,7 @@ namespace jQuery_File_Upload.MVC5.Controllers
         {
             return View();
         }
+      
         public ActionResult Show()
         {
             JsonFiles ListOfFiles = filesHelper.GetFileList();
