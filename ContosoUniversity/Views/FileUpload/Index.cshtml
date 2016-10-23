@@ -1,15 +1,26 @@
 ﻿
 @{
 
-    ViewBag.Title = "Index";
+    ViewBag.Title = "upload";
 }
 
-<h2>Index</h2>
+<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">图片库</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+	<div class="container">
+<div class=row>
 <ul class="nav nav-pills" role="tablist">
       <li role="presentation" class="active"> @Html.ActionLink("添加", "Index", "FileUpload")</li>
-	   <li role="presentation"> @Html.ActionLink("修改", "Edit", "FileUpload")</li>
-	 
+	   <li role="presentation"> @Html.ActionLink("修改", "Edit", "FileUpload")</li>	 
 </ul>
+</div>
+
 <!-- blueimp File Upload & Gallery styles -->
 @Styles.Render("~/Content/FileUpload")
 
@@ -42,5 +53,5 @@
 
 </script>
 @Html.Partial("_Files")
-
+</div
 @Scripts.Render("~/bundles/FileUpload")

@@ -506,6 +506,7 @@
     <Content Include="Content\Free-file-icons\LICENSE" />
     <None Include="Properties\PublishProfiles\UNIVERSITY.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\flip.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

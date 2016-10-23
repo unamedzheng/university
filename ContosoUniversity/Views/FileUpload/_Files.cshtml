@@ -1,9 +1,6 @@
 ﻿
-
-<h2>jQuery File Upload</h2>
-
-
 <form id="fileupload" method="POST" enctype="multipart/form-data" data-url="@Url.Action("Upload","FileUpload")">
+  <br></br>
     <div class="row fileupload-buttonbar">
         <div class="col-lg-7">
                 <!-- The fileinput-button span is used to style the file input field as button -->
@@ -49,14 +46,20 @@
         </div>
     
     <!-- The table listing the files available for upload/download -->
-    <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+    <table role="presentation" class="table table-striped">
+      <thead>
+         <tr>
+      <th>Preview</th>
+      <th>Name</th>
+         <th>Size</th>
+      <th>Operation</th>
+    </tr>
+      </thead>
+<tbody class="files"></tbody></table>
 </form>
 
 <br>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
-    Launch demo modal
-  </button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

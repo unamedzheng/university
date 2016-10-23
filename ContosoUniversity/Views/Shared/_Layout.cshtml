@@ -13,6 +13,7 @@
 <body>
     <div id="wrapper">
         <header>
+			<hr>
             <div class="navbar navbar-default navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
@@ -29,7 +30,7 @@
                             <li>@Html.ActionLink("课程", "Index", "Course")</li>
                             <li>@Html.ActionLink("剪影", "Gallery", "Gallery")</li>
                             <li>@Html.ActionLink("关于我们", "About", "Home")</li>
-                            <li>@Html.ActionLink("上传", "Index", "FileUpload")</li>
+                            <li>@Html.ActionLink("上传", "Edit", "FileUpload")</li>
                         </ul>
                     </div>
                 </div>
@@ -108,5 +109,6 @@
     @Scripts.Render("~/Scripts/jquery.flexslider.js")；
 	 @Scripts.Render("~/bundles/modernizr")
     @RenderSection("scripts", required: false)
+	<script src="~/Scripts/flip.js"></script>	
 </body>
 </html>
