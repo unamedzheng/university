@@ -1,6 +1,7 @@
 namespace ContosoUniversity.Migrations
 {
     using System;
+    using MySql.Data.Entity;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -10,6 +11,7 @@ namespace ContosoUniversity.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
         }
 
         protected override void Seed(ContosoUniversity.DAL.SchoolContext context)
