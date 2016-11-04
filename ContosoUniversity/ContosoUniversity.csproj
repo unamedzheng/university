@@ -496,7 +496,6 @@
     <Content Include="img\stem-4.png" />
     <Content Include="img\tom.jpg" />
     <Content Include="img\works\1.jpg" />
-    <Content Include="img\works\2.jpg" />
     <Content Include="img\works\3.jpg" />
     <Content Include="img\works\4.jpg" />
     <Content Include="img\works\5.jpg" />
@@ -504,6 +503,7 @@
     <Content Include="img\works\7.jpg" />
     <Content Include="img\works\8.jpg" />
     <Content Include="img\qrcode.jpg" />
+    <Content Include="img\works\2.jpg" />
     <Content Include="Scripts\animate.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
